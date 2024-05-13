@@ -1,0 +1,1020 @@
+<!DOCTYPE html>
+<html lang="zh_TW">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+        <meta name="viewport" content="width=1240">
+        <meta name="description"
+            content="探索程式設計的奇妙世界，就讓我們機智可愛的小幫手，隨時為你解答各種程式疑難雜症，助你一臂之力！從基礎語法到高階技術，無所不包！無論是專業程式設計師或是初學者，都能讓你的編程之旅更加流暢與愉快。一起來節省寶貴時間，讓寫程式變得更加輕鬆、快捷！一起進入寫程式的快樂新紀元吧！">
+        <meta name="keywords" content="AI-75, 程式設計, 小幫手, 機器人">
+        <meta property="og:type" content="article">
+        <meta property="og:image"
+            content="./AI-75_files/AI-75 寫程式機器人.png">
+        <meta property="og:title" content="AI-75 寫程式機器人 (Code Pilot, Copilot)">
+        <meta property="og:site_name" content="立達軟體科技股份有限公司">
+        <meta property="og:description"
+            content="探索程式設計的奇妙世界，就讓我們機智可愛的小幫手，隨時為你解答各種程式疑難雜症，助你一臂之力！從基礎語法到高階技術，無所不包！無論是專業程式設計師或是初學者，都能讓你的編程之旅更加流暢與愉快。一起來節省寶貴時間，讓寫程式變得更加輕鬆、快捷！一起進入寫程式的快樂新紀元吧！">
+        <meta property="og:url" content="https://tw.myai168.com/article/index?sn=11951">
+        <meta property="og:locale" content="zh_TW">
+        <meta property="og:locale:alternate" content="en_US">
+        <title>AI-75 寫程式機器人 (Code Pilot, Copilot)</title>
+
+
+        <link rel="stylesheet" type="text/css" href="./AI-75_files/gt_lib.css">
+
+        <script async="" src="./AI-75_files/fbevents.js"></script>
+        <script type="text/javascript" charset="utf-8"
+            src="./AI-75_files/jquery-1.11.1.min.js"></script>
+        <script type="text/javascript" charset="utf-8"
+            src="./AI-75_files/gt_lib.js"></script>
+        <script async="" src="./AI-75_files/js"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
+
+            gtag('config', 'G-ZEEXQJNHQ0');
+        </script>
+        <script>
+            !function (f, b, e, v, n, t, s) {
+                if (f.fbq) return; n = f.fbq = function () {
+                    n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+                };
+                if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+                n.queue = []; t = b.createElement(e); t.async = !0;
+                t.src = v; s = b.getElementsByTagName(e)[0];
+                s.parentNode.insertBefore(t, s)
+            }(window, document, 'script',
+                'https://connect.facebook.net/en_US/fbevents.js');
+            fbq('init', '140091243371656');
+            fbq('track', 'PageView');
+        </script>
+    </head>
+
+
+    <!-- Google tag (gtag.js) -->
+
+
+
+    <!-- Facebook Pixel Code -->
+
+    <body><noscript><img height="1" width="1" style="display:none"
+                src="https://www.facebook.com/tr?id=140091243371656&ev=PageView&noscript=1" /></noscript>
+        <!-- End Facebook Pixel Code -->
+
+
+
+        <div id="nav" class="navbar"><!--width:auto-->
+            <div class="nav_bar">
+                <div class="nav_left">
+                    <a href="#"><img src="./AI-75_files/MYAI168.png" width="130"
+                            alt="MYAI168.COM"></a>
+                </div><!--nav_left-->
+                <div class="nav_mid">
+
+                    <form action="#" method="post" autocomplete="off">
+                        <input type="text" id="search" name="search" placeholder="搜尋" value="">
+                        <input type="submit" class="nav_search_bt">
+                    </form>
+
+                </div><!--nav_mid-->
+
+                <div class="nav_right">
+                    <span class="nav_login"><a href="#">Guest</a></span><span class="nav_register"><a
+                            href="#">登出</a></span>
+                </div><!--nav_right-->
+            </div><!--nav_bar-->
+        </div><!--nav-->
+
+        <div id="view">
+            <link href="./AI-75_files/jplayer.blue.monday.css" rel="stylesheet"
+                type="text/css">
+            <script type="text/javascript" charset="utf-8"
+                src="./AI-75_files/jquery.jplayer.min.js"></script>
+            <link rel="stylesheet" type="text/css" href="./AI-75_files/colorbox.css">
+            <script type="text/javascript" charset="utf-8"
+                src="./AI-75_files/jquery.colorbox.js"></script>
+            <script type="text/javascript">
+                $(document).ready(function () {
+                    $(document).bind('cbox_open', function () {
+                        $('html').css({ overflow: 'hidden' });
+                    }).bind('cbox_closed', function () {
+                        $('html').css({ overflow: '' });
+                    });
+
+                    $(".wholikecbox").click(function () {
+                        var thisId = this.id;
+                        $("#" + thisId).colorbox({ rel: thisId, transition: "none", width: "40%", height: "50%" });
+                    });
+
+                    //get video
+                    $("#jquery_jplayer_1").jPlayer({
+                        ready: function () {
+                            $(this).jPlayer("setMedia", {
+                                m4v: "https://tw.myai168.com/api/file/download?sn=",
+                                //m4v: "http:///api/s3/download?sn=",
+                                poster: 'https://www.myai168.com/image/video_bg.png'
+                            }).jPlayer("play");
+                        },
+                        swfPath: "https://www.myai168.com/js/jplayer_js",
+                        solution: "html, flash",
+                        supplied: "m4v",
+                        size: {
+                            width: "636px",
+                            height: "400px",
+                            cssClass: "jp-video-360p"
+                        },
+                        smoothPlayBar: true,
+                        keyEnabled: true
+                    });
+                    //get video
+
+                    //comment message
+                    var focusElement = {};
+                    $("textarea").focus(function () {
+                        focusElement = this;
+                    });
+                    $(document).keydown(function (e) {
+                        if (e.which == 13) {
+                            var userSn = "1002377";
+                            var lang = "1";
+                            var commentId = focusElement.id;
+                            var commentSn = commentId.split("_");
+                            var message = document.getElementById(commentId).value;
+
+                            if (userSn <= 0) {
+                                if (lang == 0) {
+                                    alert("Please login!");
+                                } else if (lang == 1) {
+                                    alert("請登入!");
+                                } else if (lang == 2) {
+                                    alert("请登入!");
+                                }
+                                document.getElementById(commentId).value = null;
+                                return false;
+                            } else {
+                                if ($.trim(message) != "") {
+                                    var commentUrl = "/comment/dir/comment";
+                                    $.ajax({
+                                        url: commentUrl,
+                                        type: "POST",
+                                        cache: false,
+                                        data: { sn: commentSn[2], message: message },
+                                        dataType: 'html'
+                                    }).done(function (data) {
+                                        document.getElementById(commentId).value = "";
+                                        Reply(commentSn[2]);
+                                    });
+                                }
+                            }
+                        }
+                    });
+                    //comment message
+                });
+
+                function whoCommentLikeBox(thisId) {
+                    $(thisId).colorbox({ rel: thisId, transition: "none", width: "40%", height: "50%" });
+                }
+
+                //mouse move
+                function ShowDeleteBt(cfSn, commentUserSn) {
+                    var userSn = "1002377";
+                    var userType = "2";
+                    if (userSn == commentUserSn || userType == 4) {
+                        $("#commentDeleteBt_" + cfSn).css({ 'display': 'inline' });
+                    }
+                }
+                function HideDeleteBt(cfSn) {
+                    $("#commentDeleteBt_" + cfSn).css({ 'display': 'none' });
+                }
+                function Delete_Comment(cfSn, dirSn) {
+                    var lang = "1";
+                    if (lang == 0) {
+                        var r = confirm("Are you sure you want to delete this comment?");
+                    } else if (lang == 1) {
+                        var r = confirm("你確定要刪除這個留言嗎？");
+                    } else if (lang == 2) {
+                        var r = confirm("你确定要删除这个评论吗？");
+                    }
+                    if (r == true) {
+                        if (window.XMLHttpRequest) {// code for IE7+, Firefox, Chrome, Opera, Safari
+                            xmlhttp = new XMLHttpRequest();
+                        } else {// code for IE6, IE5
+                            xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+                        }
+                        xmlhttp.onreadystatechange = function () {
+                            if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+                                Reply(dirSn);
+                            }
+                        }
+                        xmlhttp.open("GET", "/comment/dir/delete_comment?sn=" + cfSn, true);
+                        xmlhttp.send();
+                    }
+                }
+                //mouse move
+
+                //reply
+                function Reply(sn) {
+                    var dirUrl = "/comment/dir/reply";
+                    $.ajax({
+                        url: dirUrl,
+                        type: "GET",
+                        cache: false,
+                        data: { sn: sn },
+                        dataType: 'html'
+                    }).done(function (data) {
+                        document.getElementById("comment_" + sn).innerHTML = data;
+                    });
+                }
+                //reply
+
+                //like bt
+                function I_Like_This(sn, userSn, lang) {
+                    var gotoUrl = "/article/index?sn=11951";
+                    if (userSn <= 0) {
+                        GtBrowser_GotoPage(gotoUrl, userSn, lang);
+                    }
+                    if (window.XMLHttpRequest) {// code for IE7+, Firefox, Chrome, Opera, Safari
+                        xmlhttp = new XMLHttpRequest();
+                    } else {// code for IE6, IE5
+                        xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+                    }
+                    xmlhttp.onreadystatechange = function () {
+                        if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+                            Get_Count(sn);
+                        }
+                    }
+                    xmlhttp.open("GET", "/comment/dir/like?sn=" + sn, true);
+                    xmlhttp.send();
+                }
+
+                function I_Like_This_Comment(cfSn, likeCommentUserSn, lang) {
+                    var userSn = "1002377";
+                    var gotoUrl = "/article/index?sn=11951";
+                    if (userSn <= 0) {
+                        GtBrowser_GotoPage(gotoUrl, userSn, lang);
+                    }
+                    if (window.XMLHttpRequest) {// code for IE7+, Firefox, Chrome, Opera, Safari
+                        xmlhttp = new XMLHttpRequest();
+                    } else {// code for IE6, IE5
+                        xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+                    }
+                    xmlhttp.onreadystatechange = function () {
+                        if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+                            Get_Comment_Count(cfSn, likeCommentUserSn);
+                        }
+                    }
+                    xmlhttp.open("GET", "/comment/dir/like_comment?sn=" + cfSn + "&userSn=" + likeCommentUserSn, true);
+                    xmlhttp.send();
+                }
+                //like bt
+
+                //get like count
+                function Get_Count(sn) {
+                    var url = "/comment/dir/like_count?sn=" + sn;
+                    //alert(url);
+                    jQuery.ajaxSetup({ cache: false });
+                    $.get(url, function (data) {
+                        var json = data.toString();
+                        //alert(json);
+                        var obj = jQuery.parseJSON(json);
+                        var status = obj.status;
+                        var message = obj.message;
+                        var likeCount = obj.likeCount;
+                        var likeBt = obj.likeBt;
+                        var accountNames = obj.accountNames;
+
+                        document.getElementById("whoLike_" + sn).innerHTML = likeCount;
+                        document.getElementById("likeButton_" + sn).innerHTML = likeBt;
+                        $("#whoLike_" + sn).attr("alt", accountNames);
+                        if (likeCount > 0) {
+                            $("#like_count_" + sn).css({ 'display': 'inline' });
+                        } else {
+                            $("#like_count_" + sn).css({ 'display': 'none' });
+                        }
+                    });
+                }
+                function Get_Comment_Count(cfSn, likeCommentUserSn) {
+                    var url = "/comment/dir/like_comment_count?sn=" + cfSn + "&userSn=" + likeCommentUserSn;
+                    //alert(url);
+                    jQuery.ajaxSetup({ cache: false });
+                    $.get(url, function (data) {
+                        var json = data.toString();
+                        //alert(json);
+                        var obj = jQuery.parseJSON(json);
+                        var status = obj.status;
+                        var message = obj.message;
+                        var likeCount = obj.likeCount;
+                        var likeBt = obj.likeBt;
+                        var accountNames = obj.accountNames;
+
+                        document.getElementById("whoCommentLike_" + cfSn).innerHTML = " " + likeCount;
+                        document.getElementById("likeCommentBt_" + cfSn).innerHTML = likeBt;
+                        $("#whoCommentLike_" + cfSn).attr("alt", accountNames);
+                        if (likeCount > 0) {
+                            $("#like_comment_count_" + cfSn).css({ 'display': 'inline' });
+                        } else {
+                            $("#like_comment_count_" + cfSn).css({ 'display': 'none' });
+                        }
+                    });
+                }
+                //get like count
+
+                function Share_Bt(sn) {
+                    $(".share_index_bt_" + sn).fadeToggle();
+                }
+                function ShowShareBt(sn) {
+                    $(".share_index_bt_" + sn).css({ 'display': 'inline' });
+                }
+                function HideShareBt(sn) {
+                    $(".share_index_bt_" + sn).css({ 'display': 'none' });
+                }
+            </script>
+
+
+            <style>
+                a[href="#"] {
+                    cursor: not-allowed;
+                }
+                form[action="#"] input {
+                    cursor: not-allowed;
+                }
+
+                .contentArea_article_data ol,
+                .contentArea_article_data ul {
+                    list-style: inherit;
+                    margin-left: 20px;
+                }
+
+                .contentArea_article_data table {
+                    white-space: nowrap;
+                }
+
+                .contentArea_article_data table td {
+                    padding: 0 15px 0 0;
+                }
+
+                .fb_ltr {
+                    min-height: 200px !important;
+                }
+            </style>
+            <div id="article" style="min-height: 479px;">
+
+                <div id="leftCol">
+
+                    <div id="pagelet_list_nav">
+                        <div class="left_menu">
+                            <h4 class="navHeader">選單</h4>
+                            <div class="homeSideNav" id="pagesNav">
+                                <ul class="uiSideNav">
+                                    <li class="sideNavItem stat_elem"><a class="item clearfix" href="#">
+                                            <div>
+                                                <div class="linkWrap">儲值</div>
+                                            </div>
+                                        </a></li>
+                                    <li class="sideNavItem stat_elem">
+                                        <a class="item clearfix" href="#">
+                                            <div>
+                                                <div class="linkWrap">AI大補帖 雲端服務</div>
+                                            </div>
+                                        </a>
+
+                                    </li>
+                                    <li class="sideNavItem stat_elem">
+                                        <a class="item clearfix" href="#">
+                                            <div>
+                                                <div class="linkWrap">- ChatGPT 4 機器人</div>
+                                            </div>
+                                        </a>
+
+                                    </li>
+                                    <li class="sideNavItem stat_elem">
+                                        <a class="item clearfix" href="#">
+                                            <div>
+                                                <div class="linkWrap">- Claude 3 機器人</div>
+                                            </div>
+                                        </a>
+
+                                    </li>
+                                    <li class="sideNavItem stat_elem">
+                                        <a class="item clearfix" href="#">
+                                            <div>
+                                                <div class="linkWrap">- perplexity.ai 機器人</div>
+                                            </div>
+                                        </a>
+
+                                    </li>
+                                    <li class="sideNavItem stat_elem">
+                                        <a class="item clearfix" href="#">
+                                            <div>
+                                                <div class="linkWrap">- DALL·E 3 文生圖機器人</div>
+                                            </div>
+                                        </a>
+
+                                    </li>
+                                    <li class="sideNavItem stat_elem">
+                                        <a class="item clearfix" href="#">
+                                            <div>
+                                                <div class="linkWrap">- 寫作業機器人</div>
+                                            </div>
+                                        </a>
+
+                                    </li>
+                                    <li class="sideNavItem stat_elem">
+                                        <a class="item clearfix" href="#">
+                                            <div>
+                                                <div class="linkWrap">- 小編機器人</div>
+                                            </div>
+                                        </a>
+
+                                    </li>
+                                    <li class="sideNavItem stat_elem">
+                                        <a class="item clearfix" href="#">
+                                            <div>
+                                                <div class="linkWrap">- 合約審閱機器人</div>
+                                            </div>
+                                        </a>
+
+                                    </li>
+                                    <li class="sideNavItem stat_elem">
+                                        <a class="item clearfix" href="#">
+                                            <div>
+                                                <div class="linkWrap">- 寫報告機器人</div>
+                                            </div>
+                                        </a>
+
+                                    </li>
+                                    <li class="sideNavItem stat_elem">
+                                        <a class="item clearfix" href="#">
+                                            <div>
+                                                <div class="linkWrap">- 網頁重點機器人</div>
+                                            </div>
+                                        </a>
+
+                                    </li>
+                                    <li class="sideNavItem stat_elem">
+                                        <a class="item clearfix" href="#">
+                                            <div>
+                                                <div class="linkWrap">- PDF重點機器人</div>
+                                            </div>
+                                        </a>
+
+                                    </li>
+                                    <li class="sideNavItem stat_elem">
+                                        <a class="item clearfix" href="#">
+                                            <div>
+                                                <div class="linkWrap">- 中文翻譯機器人</div>
+                                            </div>
+                                        </a>
+
+                                    </li>
+                                    <li class="sideNavItem stat_elem">
+                                        <a class="item clearfix" href="#">
+                                            <div>
+                                                <div class="linkWrap">- 英文翻譯機器人</div>
+                                            </div>
+                                        </a>
+
+                                    </li>
+                                    <li class="sideNavItem stat_elem">
+                                        <a class="item clearfix" href="#">
+                                            <div>
+                                                <div class="linkWrap">- 英文文法檢查機器人</div>
+                                            </div>
+                                        </a>
+
+                                    </li>
+                                    <li class="sideNavItem stat_elem">
+                                        <a class="item clearfix" href="#">
+                                            <div>
+                                                <div class="linkWrap">- 寫論文機器人</div>
+                                            </div>
+                                        </a>
+
+                                    </li>
+                                    <li class="sideNavItem stat_elem">
+                                        <a class="item clearfix" href="#">
+                                            <div>
+                                                <div class="linkWrap">- 寫計畫書機器人</div>
+                                            </div>
+                                        </a>
+
+                                    </li>
+                                    <li class="sideNavItem stat_elem">
+                                        <a class="item clearfix" href="#">
+                                            <div>
+                                                <div class="linkWrap">- 寫程式機器人</div>
+                                            </div>
+                                        </a>
+
+                                    </li>
+                                    <li class="sideNavItem stat_elem">
+                                        <a class="item clearfix" href="#">
+                                            <div>
+                                                <div class="linkWrap">- 衛教機器人</div>
+                                            </div>
+                                        </a>
+
+                                    </li>
+                                    <li class="sideNavItem stat_elem">
+                                        <a class="item clearfix" href="#">
+                                            <div>
+                                                <div class="linkWrap">- 我的AI女友: 愛田詩織</div>
+                                            </div>
+                                        </a>
+
+                                    </li>
+                                    <li class="sideNavItem stat_elem">
+                                        <a class="item clearfix" href="#">
+                                            <div>
+                                                <div class="linkWrap">- 我的AI男友: 愛田翔太</div>
+                                            </div>
+                                        </a>
+
+                                    </li>
+                                    <li class="sideNavItem stat_elem">
+                                        <a class="item clearfix" href="#">
+                                            <div>
+                                                <div class="linkWrap">開源大補帖 開發工具</div>
+                                            </div>
+                                        </a>
+
+                                    </li>
+                                    <li class="sideNavItem stat_elem">
+                                        <a class="item clearfix" href="#">
+                                            <div>
+                                                <div class="linkWrap">- MYAI Studio - Windows</div>
+                                            </div>
+                                        </a>
+
+                                    </li>
+                                    <li class="sideNavItem stat_elem">
+                                        <a class="item clearfix" href="#">
+                                            <div>
+                                                <div class="linkWrap">- MYAI Studio - Linux</div>
+                                            </div>
+                                        </a>
+
+                                    </li>
+                                    <li class="sideNavItem stat_elem">
+                                        <a class="item clearfix" href="#">
+                                            <div>
+                                                <div class="linkWrap">- 人工智慧演算法</div>
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                    <li class="sideNavItem stat_elem">
+                                        <a class="item clearfix" href="#">
+                                            <div>
+                                                <div class="linkWrap">- 學習教材</div>
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                    <li class="sideNavItem stat_elem">
+                                        <a class="item clearfix" href="#">
+                                            <div>
+                                                <div class="linkWrap">精選人工智慧電腦</div>
+                                            </div>
+                                        </a>
+
+                                    </li>
+                                    <li class="sideNavItem stat_elem">
+                                        <a class="item clearfix" href="#">
+                                            <div>
+                                                <div class="linkWrap">- 中階人工智慧工作站</div>
+                                            </div>
+                                        </a>
+
+                                    </li>
+                                    <li class="sideNavItem stat_elem">
+                                        <a class="item clearfix" href="#">
+                                            <div>
+                                                <div class="linkWrap">- 高階人工智慧工作站</div>
+                                            </div>
+                                        </a>
+
+                                    </li>
+                                    <li class="sideNavItem stat_elem">
+                                        <a class="item clearfix" href="#">
+                                            <div>
+                                                <div class="linkWrap">- 高階人工智慧伺服器</div>
+                                            </div>
+                                        </a>
+
+                                    </li>
+                                    <li class="sideNavItem stat_elem">
+                                        <a class="item clearfix" href="#">
+                                            <div>
+                                                <div class="linkWrap">- 頂級人工智慧伺服器</div>
+                                            </div>
+                                        </a>
+
+                                    </li>
+                                    <li class="sideNavItem stat_elem">
+                                        <a class="item clearfix" href="#">
+                                            <div>
+                                                <div class="linkWrap">精選 NAS 網路儲存伺服器</div>
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                    <li class="sideNavItem stat_elem">
+                                        <a class="item clearfix" href="#">
+                                            <div>
+                                                <div class="linkWrap">精選 UPS 不斷電系統</div>
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                    <li class="sideNavItem stat_elem">
+                                        <a class="item clearfix" href="#">
+                                            <div>
+                                                <div class="linkWrap">雲端服務</div>
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                    <li class="sideNavItem stat_elem">
+                                        <a class="item clearfix" href="#">
+                                            <div>
+                                                <div class="linkWrap">客製化接案</div>
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                    <li class="sideNavItem stat_elem">
+                                        <a class="item clearfix" href="#">
+                                            <div>
+                                                <div class="linkWrap">- 人工智慧機器人專案</div>
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                    <li class="sideNavItem stat_elem">
+                                        <a class="item clearfix" href="#">
+                                            <div>
+                                                <div class="linkWrap">-- 鸞文輔助說明機器人</div>
+                                            </div>
+                                        </a>
+
+                                    </li>
+                                    <li class="sideNavItem stat_elem">
+                                        <a class="item clearfix" href="#">
+                                            <div>
+                                                <div class="linkWrap">-- 解經輔助機器人</div>
+                                            </div>
+                                        </a>
+
+                                    </li>
+                                    <li class="sideNavItem stat_elem">
+                                        <a class="item clearfix" href="#">
+                                            <div>
+                                                <div class="linkWrap">-- 解籤輔助機器人</div>
+                                            </div>
+                                        </a>
+
+                                    </li>
+                                    <li class="sideNavItem stat_elem">
+                                        <a class="item clearfix" href="#">
+                                            <div>
+                                                <div class="linkWrap">-- 客服機器人</div>
+                                            </div>
+                                        </a>
+
+                                    </li>
+                                    <li class="sideNavItem stat_elem">
+                                        <a class="item clearfix" href="#">
+                                            <div>
+                                                <div class="linkWrap">- AOI 自動光學檢測設備專案</div>
+                                            </div>
+                                        </a>
+
+                                    </li>
+                                    <li class="sideNavItem stat_elem">
+                                        <a class="item clearfix" href="#">
+                                            <div>
+                                                <div class="linkWrap">- 雲端應用專案</div>
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                    <li class="sideNavItem stat_elem">
+                                        <a class="item clearfix" href="#">
+                                            <div>
+                                                <div class="linkWrap">- APP 應用專案</div>
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                    <li class="sideNavItem stat_elem">
+                                        <a class="item clearfix" href="#" target="_blank">
+                                            <div>
+                                                <div class="linkWrap">購買方式</div>
+                                            </div>
+                                        </a>
+
+                                    </li>
+                                    <li class="sideNavItem stat_elem">
+                                        <a class="item clearfix" href="#" target="_blank">
+                                            <div>
+                                                <div class="linkWrap">聯絡我們</div>
+                                            </div>
+                                        </a>
+
+                                    </li>
+                                    <li class="sideNavItem stat_elem">
+                                        <a class="item clearfix" href="#">
+                                            <div>
+                                                <div class="linkWrap">關於我們</div>
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                    <li class="sideNavItem stat_elem">
+                                        <a class="item clearfix" href="#" target="_blank">
+                                            <div>
+                                                <div class="linkWrap">Line 客服</div>
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                    <li class="sideNavItem stat_elem">
+                                        <a class="item clearfix" href="#" target="_blank">
+                                            <div>
+                                                <div class="linkWrap">Facebook 臉書粉絲頁</div>
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                    <li class="sideNavItem stat_elem">
+                                        <a class="item clearfix" href="#" target="_blank">
+                                            <div>
+                                                <div class="linkWrap">Facebook Group 臉書社團</div>
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                    <li class="sideNavItem stat_elem">
+                                        <a class="item clearfix" href="#" target="_blank">
+                                            <div>
+                                                <div class="linkWrap">YouTube</div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="sideNavItem stat_elem"><a class="item clearfix" href="#" target="_blank">
+                                            <div>
+                                                <div class="linkWrap">人才招募</div>
+                                            </div>
+                                        </a></li>
+
+
+                                    <li class="sideNavItem stat_elem">
+                                        <a class="item clearfix" href="#" target="_blank">
+                                            <div>
+                                                <div class="linkWrap">GitHub</div>
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                    <li class="sideNavItem stat_elem">
+                                        <a class="item clearfix" href="#" target="_self">
+                                            <div>
+                                                <div class="linkWrap">行動版</div>
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                </ul>
+                            </div><!--homeSideNav-->
+
+                            <h4 class="navHeader">Language</h4>
+                            <div class="set_lang">
+                                <ul class="uiSideNav">
+                                    <li class="sideNavItem stat_elem"><a class="item clearfix" href="#">
+                                            <div>
+                                                <div class="linkWrap">English</div>
+                                            </div>
+                                        </a></li>
+                                    <li class="sideNavItem stat_elem"><a class="item clearfix" href="#">
+                                            <div>
+                                                <div class="linkWrap">繁體中文</div>
+                                            </div>
+                                        </a></li>
+                                </ul>
+                            </div>
+                        </div><!--left_menu-->
+
+                        <!--<div class="fb_plugin_like">
+    <div id="fb-root"></div><div class="fb-like-box" data-href="#" data-width="234" data-height="375" data-colorscheme="light" data-show-faces="true" data-header="false" data-stream="false" data-show-border="false"></div>    </div>-->
+                    </div><!--pagelet_list_nav-->
+                </div><!--leftCol-->
+
+                <div id="controlCol">
+                    <div id="rightCol" role="complementary">
+                        <div class="right_menu">
+                            <div style="margin-top:10px;">
+                                <div class="">
+                                    <div class="">
+                                        <h1 class="recomd_article_title">上一篇</h1><br>
+                                    </div>
+                                    <div class=""><a href="#">AI-72 衛教機器人<img
+                                                src="./AI-75_files/AI-72 衛教機器人-320.png"
+                                                width="317" height="159"></a></div>
+                                </div><br>
+                                <div class="">
+                                    <div class="">
+                                        <h1 class="recomd_article_title">下一篇</h1><br>
+                                    </div>
+                                    <div class=""><a href="#">AI-84 英文文法檢查機器人<img
+                                                src="./AI-75_files/AI-84 英文文法檢查機器人-320.png"
+                                                width="317" height="212"></a></div>
+                                </div><br>
+                                <div>
+                                    <h1 class="recomd_article_title">延伸閱讀</h1><br>
+                                    <div class="recomd_article_row"><span class="recomd_article_font">
+                                            <div class="recomd_article_link"><a href="#">ROBOT-71 免上雲聊天機器人<img
+                                                        src="./AI-75_files/ROBOT-71 聊天機器人 (Llama2, 不需上雲)-320.png"
+                                                        width="317" height="159"></a></div><br>
+                                        </span></div><!--recomd_article_row-->
+                                    <div class="recomd_article_row"><span class="recomd_article_font">
+                                            <div class="recomd_article_link"><a href="#">精選 人工智慧 深度學習 機器學習 GPU 電腦
+                                                    (工作站、伺服器、筆記型電腦) 提供線上估價、無卡分期<img
+                                                        src="./AI-75_files/LEADERG COMPUTER 人工智慧 深度學習 機器學習 GPU 電腦 (工作站、伺服器、筆記型電腦) 提供線上估價-320.jpg"
+                                                        width="317" height="265"></a></div><br>
+                                        </span></div><!--recomd_article_row-->
+                                    <div class="recomd_article_row"><span class="recomd_article_font">
+                                            <div class="recomd_article_link"><a href="#">AWS, Azure, GCP, OpenAI
+                                                    雲端費用代收代付代開發票服務<img
+                                                        src="./AI-75_files/協助客戶建置、設定、及代管 AWS, Azure, GCP, 及私有雲雲端服務-320.png"
+                                                        width="317" height="183"></a></div><br>
+                                        </span></div><!--recomd_article_row-->
+                                </div><!--recomd_article-->
+                            </div>
+                            <!-- <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> -->
+                            <script type="text/javascript">
+                                $(document).ready(function () {
+
+                                })
+
+                            </script>
+
+     style="display:inline-block;width:300px;height:250px"
+     data-ad-client="ca-pub-8002781389929948"
+     data-ad-slot="5467436111"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>-->
+                        </div><!--right_menu-->
+                    </div><!--rightCol-->
+
+                    <div id="contentArea" role="main">
+                        <div id="contentArea_tree"><a href="#"><img
+                                    src="./AI-75_files/breadbrumbs_icon.png"></a>
+                            <img src="./AI-75_files/breadbrumbs_arrow.png">&nbsp;<a
+                                href="#">立達軟體科技</a>
+                            <img src="./AI-75_files/breadbrumbs_arrow.png">&nbsp;<a
+                                href="#">精選人工智慧產品</a>
+                            <img src="./AI-75_files/breadbrumbs_arrow.png">&nbsp;<a
+                                href="#"> 我的 AI</a>
+                            <img src="./AI-75_files/breadbrumbs_arrow.png">&nbsp;
+                        </div><!--contentArea_tree-->
+                        <div id="contentArea_article_cont">
+                            <div class="contentArea_article_sub"><span class="contentArea_article_sub">AI-75 寫程式機器人
+                                    (Code Pilot, Copilot)</span></div><!--contentArea_article_sub-->
+                            <div class="contentArea_article_desc">
+                                <div class="contentArea_article_data">
+                                    <p>探索程式設計的奇妙世界，就讓我們機智可愛的小幫手，隨時為你解答各種程式疑難雜症，助你一臂之力！從基礎語法到高階技術，無所不包！無論是專業程式設計師或是初學者，都能讓你的編程之旅更加流暢與愉快。一起來節省寶貴時間，讓寫程式變得更加輕鬆、快捷！一起進入寫程式的快樂新紀元吧！
+                                    </p>
+
+                                    <p> </p>
+
+                                    <p>點數收費標準：問題token數 x 0.07點 + 回答token數 x 0.2點 + 系統咒語30點</p>
+
+                                    <p> </p>
+
+                                    <p>點數1點等於0.01元新台幣。</p>
+
+                                    <p> </p>
+
+                                    <p>請修改以下訊息範例，貼到輸入訊息文字框，按下發送。</p>
+
+                                    <p> </p>
+
+                                    <p><strong>訊息範例：</strong></p>
+
+                                    <p> </p>
+
+                                    <p>請用 python 語言，寫一個影像二元化程式範例。</p>
+
+                                    <p> </p>
+
+                                    <p><img style="height:359px"
+                                            src="./AI-75_files/AI-75 寫程式機器人.png"
+                                            width="640" height="359" alt="AI-75 寫程式機器人.png" title="AI-75 寫程式機器人.png">
+                                    </p>
+
+                                    <p><iframe frameborder="0" height="600"
+                                            src="./AI-75_files/saved_resource.html"
+                                            style="height:600px" width="100%">您的瀏覽器不支持iframe，請升級</iframe></p>
+
+                                    <p style="text-align: center;"><a href="#" target="_blank">點擊此處放大對話視窗</a></p>
+                                </div><!--contentArea_article_data-->
+                                <div>
+                                    <h1 class="recomd_article_title">儲值</h1><br>請參閱以下網址：<br><br><a href="#"
+                                        target="_blank">https://tw.myai168.com/topup</a><br><br>
+                                </div>
+                                <div>
+                                    <h1 class="recomd_article_title">聯絡我們</h1><br>請參閱以下網址：<br><br><a href="#"
+                                        target="_blank">https://tw.myai168.com/article/index?sn=11056</a><br><br>
+                                </div>
+                                <div id="previousAndNext">
+                                    <div class="previousAndNextRow">
+                                        <div class="previousOrNext">上一篇: </div>
+                                        <div class="previousAndNextLink"><a href="#">AI-72 衛教機器人</a></div>
+                                    </div><br>
+                                    <div class="previousAndNextRow">
+                                        <div class="previousOrNext">下一篇: </div>
+                                        <div class="previousAndNextLink"><a href="#">AI-84 英文文法檢查機器人</a></div>
+                                    </div><br>
+                                </div><!--previous & next page-->
+                                <div id="recomd_article">
+                                    <h1 class="recomd_article_title">延伸閱讀</h1>
+                                    <div class="recomd_article_row"><span class="recomd_article_font">
+                                            <div class="recomd_article_point">1. </div>
+                                            <div class="recomd_article_link"><a href="#">ROBOT-71 免上雲聊天機器人</a></div>
+                                        </span></div><!--recomd_article_row--><br>
+                                    <div class="recomd_article_row"><span class="recomd_article_font">
+                                            <div class="recomd_article_point">2. </div>
+                                            <div class="recomd_article_link"><a href="#">精選 人工智慧 深度學習 機器學習 GPU 電腦
+                                                    (工作站、伺服器、筆記型電腦) 提供線上估價、無卡分期</a></div>
+                                        </span></div><!--recomd_article_row--><br>
+                                    <div class="recomd_article_row"><span class="recomd_article_font">
+                                            <div class="recomd_article_point">3. </div>
+                                            <div class="recomd_article_link"><a href="#">AWS, Azure, GCP, OpenAI
+                                                    雲端費用代收代付代開發票服務</a></div>
+                                        </span></div><!--recomd_article_row--><br>
+                                </div><!--recomd_article-->
+                                <div id="keywordsRow">
+                                    <div id="tag">標籤: </div>
+                                    <div id="tagLinks"><a target="_blank" href="#">AI-75</a>, <a target="_blank"
+                                            href="#">程式設計</a>, <a target="_blank" href="#">小幫手</a>, <a target="_blank"
+                                            href="#">機器人</a><br><br></div>
+                                </div><!--keywordsRow-->
+                                <div>
+                                    <h1 class="recomd_article_title">感謝客戶們的支持</h1>
+                                    臺灣大學、清華大學、陽明交通大學、成功大學、臺北醫學大學、高雄醫學大學、臺北護理健康大學、中國醫藥大學、中興大學、中央大學、中山大學、中正大學、暨南大學、嘉義大學、宜蘭大學、臺北教育大學、聯合大學、淡江大學、逢甲大學、長庚大學、義守大學、實踐大學、大同大學、中原大學、東吳大學、慈濟大學、慈濟科大、臺科大、北科大、臺中科大、雲林科大、勤益科大、虎尾科大、屏東科大、高雄科大、朝陽科大、明志科大、明新科大、南臺科大、亞東科大、中國科大、體育大學、國防大學、海軍軍官學校、陸軍專科學校、羅東高中、鼓山高中、高雄女中、臺大醫院、成大醫院、榮民總醫院、長庚醫院、慈濟醫院、義大醫院、亞東醫院、聯興國際醫院、中山科學研究院、國防部軍備局、法務部調查局、工研院、資策會、原子能委員會核能研究所、農業委員會特有生物研究保育中心、勞動部勞動研究所、紡織研究所、金屬工業研究發展中心、台灣儀器科技研究中心、車輛測試中心、中華電信、台灣自來水公司、台積電、聯電、南亞科、華邦電子、精材科技、華信光電、友達光電、群創光電、瀚宇彩晶、台塑、台塑石化、台塑網、南亞塑膠、台灣化學纖維、中國石油、羅技電子、義隆電子、隆達電子、達方電子、中磊電子、光紅建聖、鴻海、大聯大、世平興業、盟立自動化、迅得機械、南茂科技、順達科技、致伸科技、英特盛、豐興鋼鐵、中宇環保工程、竹陞科技、研揚科技、敦陽科技、竑騰科技、先豐通訊、神達電腦、神通電腦、百佳泰、科音國際、峰安車業、鴻鵠國際、藍海智慧、凸版蓋特資訊、遠傳電信、精誠軟體服務、酷媽、雄獅旅遊、北港武德宮、西螺福興宮等。
+                                </div>
+                            </div><!--contentArea_article_desc-->
+                        </div><!--contentArea_article_cont-->
+                    </div><!--contentArea_article-->
+                </div><!--controlCol-->
+            </div><!--article-->
+            <div id="footer" style="margin-top:20px;">
+                <span class="mobile_version" style="margin-left:240px;"><a href="#">手機版</a></span><span
+                    style="margin-left:15px;" class="ai_computer"><a href="#" target="_blank">儲值</a></span>
+                <span class="footerCopyWord">© 2004-2024 <a href="#">
+                        立達軟體科技股份有限公司</a></span>
+                <div style="margin-left:240px;margin-top:10px;" class="ai_computer"><a href="#" target="_blank">聯絡方式</a>
+                </div>
+            </div><!-- footer -->
+        </div><!-- view -->
+        <!-- db init time = 0.0006 sec -->
+        <!-- page process time = 0.0204 sec -->
+
+
+
+        <div id="cboxOverlay" style="display: none;"></div>
+        <div id="colorbox" class="" role="dialog" tabindex="-1" style="display: none;">
+            <div id="cboxWrapper">
+                <div>
+                    <div id="cboxTopLeft" style="float: left;"></div>
+                    <div id="cboxTopCenter" style="float: left;"></div>
+                    <div id="cboxTopRight" style="float: left;"></div>
+                </div>
+                <div style="clear: left;">
+                    <div id="cboxMiddleLeft" style="float: left;"></div>
+                    <div id="cboxContent" style="float: left;">
+                        <div id="cboxTitle" style="float: left;"></div>
+                        <div id="cboxCurrent" style="float: left;"></div>
+                        <button type="button" id="cboxPrevious"></button>
+                        <button type="button" id="cboxNext"></button>
+                        <button id="cboxSlideshow"></button>
+                        <div id="cboxLoadingOverlay" style="float: left;"></div>
+                        <div id="cboxLoadingGraphic" style="float: left;"></div>
+                    </div>
+                    <div id="cboxMiddleRight" style="float: left;"></div>
+                </div>
+                <div style="clear: left;">
+                    <div id="cboxBottomLeft" style="float: left;"></div>
+                    <div id="cboxBottomCenter" style="float: left;"></div>
+                    <div id="cboxBottomRight" style="float: left;"></div>
+                </div>
+            </div>
+            <div style="position: absolute; width: 9999px; visibility: hidden; display: none; max-width: none;"></div>
+        </div>
+    </body>
+</html>
